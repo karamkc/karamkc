@@ -1,19 +1,120 @@
-<!doctype html>
-<title>Site Maintenance</title>
-<style>
-  body { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-</style>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="background">
 
-<article>
-    <h1>My name is Karam KC</h1>
-    <div>
-        <p>Sorry for the inconvenience but we&rsquo;re performing development at the moment.</p>
-<p>Template From : <a href="https://www.suntos.com.np/web-bootcamp/"> Web boot-camp</a> </p>
+
+		<div class="nav">
+			<a class="a active" href="#">HOME</a>
+			<a class="b" href="#">MYSELF</a>
+			<a class="c" href="#">GALLERY</a>
+			<a class="d" href="#">CONTACT</a>
+        </div>
+        
+    <div class="content">    
+
+         <div class="home">
+    	       <h1>This is Prem Khatri</h1>
+                <h3>An engineer</h3>
+            </div>   
+    <div class="myself" style="display: none;">
+    	<p>Hello everyone,this is Prem Khatri,resident of Baijanath -06 Banke.Telling about myself,i was born in june 14,1997 and was the second child of my family.I completed my study till grade 6 via a school on my village named 'Shree Saraswati English Boarding School.'Then after, i joined another school 'Ram Janaki Higher Secondary School' and completed my secondary level there. I completed intermediate level through a college 'Jaya Bageshwori Higher Secondary School'located in Nepalgunj.For under graduation, i joined engineering in Paschimanchal Campus, situated in beautiful city of our country,Pokhara.
+           
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+    	 </p>
+    </div>	
+
+    <div class="gallery">
+    	<div class="image">
+    		<img src="">
+    	</div>
+          
 
     </div>
-</article>
+        <div  class="contact" style="display: none;">
+        	<div class="contactform">
+        		<form action=""method="post">
+        			<input type="text" name="" class="inputtext" value="First Name">
+        			<input type="text" name="" class="inputtext" value="Last  Name">
+        			<input type="text" name="" class="inputtext" value="Your Email">
+        		    <textarea cols="4" rows="4" class="inputmessage"> Your meaasges!!!! 
+        		       </textarea>
+        		       <input type="button" name="" class="submitbutton" value="Submit">
+        			</form>
+        		</div>
+        	</div> 
+        </div>
+    </div>
+
+
+
+</div>
+
+<script type="text/javascript" src="lib/jquery.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function() {
+		$('a').click(function (){
+			//alert(" i am click")
+			var selected = $(this);
+			$('a').removeClass('active');
+			$(selected).addClass('active');
+		});
+      var $a = $('.a'),
+      $b = $('.b'),
+      $c = $('.c'),
+      $d=$('.d'),
+      $home=$('.home'),
+      $myself=$('.myself'),
+      $gallery=$('.gallery'),
+      $contact=$('.contact');
+
+      $a.click(function(){
+      	$home.show();
+      $myself.hide();
+      $gallery.hide();
+      $contact.hide();
+
+      }),
+      $b.click(function(){
+      	$home.hide();
+      	$myself.show();
+      	$gallery.hide();
+      	$contact.hide();
+      }),
+       $c.click(function(){
+      	$home.hide();
+      	$myself.hide();
+      	$gallery.show();
+      	$contact.hide();
+      }), 
+       $d.click(function(){
+      	$home.hide();
+      	$myself.hide();
+      	$gallery.hide();
+      	$contact.show();
+      });
+        
+	});
+</script>
+
+
+</body>
+</html>
