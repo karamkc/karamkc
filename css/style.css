@@ -84,25 +84,36 @@ a.active, .nav a:hover{
    color: black;
   }
 .home h1{
-   font-size: 70px;
+   font-size: 5em;
    text-transform: uppercase;
     border-bottom:  1px solid; 
     
 }
 .home h3{
-	font-size: 20px;
+	font-size: 1.2em;
+	
 	padding: 5px 0; 
 	opacity: 1;
 
 }
 
-.myself p{
+.myself h1{
     font-size: 20px;
-    left: 0;
+    text-align: center;
     top: 30%;
     opacity: 1;
-    color:white;
+    color:yellow;
+   
+    text-decoration: underline ;
+    font-family: verdana;
+ 	padding-bottom: 10px;
+ 	
+    
    }
+ h1:hover{
+ 	transition:0.9s ease; 
+ 	transform: scale(1.2);
+ }
 .gallery{
 	  font-size: 20px;
     left: 0;
@@ -148,5 +159,32 @@ a.active, .nav a:hover{
 	margin-top: 10px;
 	float: left;
 }
+.gallery{
+		margin-left: 20%;
+		height: 100%;
+}
+
+ .image {
+    float: left;
+    display:block;
+    width: 100%;
+ }
+ .image img{
+ 	padding:0 3% 3% 0;
+ 	float:left;
+ 	width: 30%;
+ 	height: 10%;
+ 	
+ }
+img:hover{
+
+ 	transform: scale(2);
+ 	transition:0.9s ease;
+}
+ 
+
+
+
+
 
 
